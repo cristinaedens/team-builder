@@ -26,19 +26,19 @@ return (
     <form onSubmit={handleSumbit}>
       <label htmlFor="name">Member's Name</label>
       <br/>
-      <input type="text" id="name" placeholder="Full Name" name="name" defaultValue={member.name} onChange={handleChanges} required/>
+      <input type="text" id="name" placeholder="Full Name" name="name" value={member.name} onChange={handleChanges} required/>
       <br/>
       <br/>
       <label htmlFor="email">Member's Email</label>
       <br/>
-      <input type="email" id="email" placeholder="Email" name="email" defaultValue={member.email} onChange={handleChanges} required/>
+      <input type="email" id="email" placeholder="Email" name="email" value={member.email} onChange={handleChanges} required/>
       <br/>
       <br/>
 
       <label htmlFor="role">Member's Role</label>
       <br/>
 
-<select name="role" id="role" defaultValue={member.role} onChange={handleChanges}>
+<select name="role" id="role" value={member.role} onChange={handleChanges}>
   <option value="Select a Role">Select A Role</option>
   <option value="Backend Engineer">Backend Engineer</option>
   <option value="Frontend Engineer">Frontend Engineer</option>
