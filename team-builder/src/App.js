@@ -17,7 +17,7 @@ const newMember ={
 };
 setMember([...member, newMember]);
   }
-
+console.log(member);
   return (
     <div className="container">
       <h1 className="header">Your Team</h1>
